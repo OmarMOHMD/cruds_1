@@ -1,0 +1,128 @@
+/* the start of normalization*/
+:root{
+    --bg-color-header:#7ed9f0;
+    --text-color:#1FA389;
+    --hover-color:#1FA;
+    --btn-color:#1FA389;
+}
+
+* {
+    user-select: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: inherit;
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* end fo normalization */
+
+/* start header */
+.app__wrapper{
+    max-width: 800px;
+    margin: 50px auto;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px 0px #ddd ;
+    overflow: hidden;
+}
+
+.app__header{
+    text-align: center;
+    padding: 10px;
+    background-color: var(--bg-color-header);
+}
+
+.app__header h1{
+    color:var(--text-color);
+    font-weight: 100;
+    font-size: 3em;
+}
+
+.app__search input{
+    padding: 7px;
+    border: 1px solid transparent;
+    transition: color .3s ease;
+    font-size: 0.9em;
+    outline: none;
+}
+
+.app__search input:hover,
+.app__search input:focus {
+    border: 1px solid var(--hover-color) ;
+}
+
+/* end header */
+
+/* start main content */
+
+.app__delete img{
+    max-width: 50px;
+}
+
+.app__content{
+    text-align: center;
+    line-height:7rem;
+}
+
+.app__content h2{
+    text-align: left;
+    font-weight: 100;
+    font-size: 2.8rem;
+    margin: 20px;
+}
+
+.app__list{
+    text-align: start;
+    margin: 40px;
+    font-size: 1.4em;
+}
+
+.app__delete {
+    margin-left: 500px;
+}
+
+.app__delete {
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.app__add input{
+    border: 1px solid silver ;
+    transition: color .3s ease;
+    padding: 12px;
+    max-width: 280px;
+    border-right: none;
+    outline: none;
+    font-size: 1.3em;
+    font-weight: 100;
+    border-radius: 4px 0 0 4px;
+    transition: border .3s ease;
+}
+
+.app__add input:hover,
+.app__add input:focus
+{
+    border: 1px solid var(--hover-color);
+}
+
+.app__add button{
+    background-color: var(--btn-color);
+    border-radius: 0 5px 5px 0;
+    padding: 16px;
+    color: #ddd;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+}
+
+/* end main content */
