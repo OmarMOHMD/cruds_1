@@ -7,7 +7,6 @@
 }
 
 * {
-    user-select: none;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -64,30 +63,35 @@ body {
 
 /* start main content */
 
+.app__book {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .app__delete img{
-    max-width: 50px;
+    width: 40px;
 }
 
 .app__content{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
     line-height:7rem;
 }
 
 .app__content h2{
-    text-align: left;
+    text-align: center;
     font-weight: 100;
-    font-size: 2.8rem;
-    margin: 20px;
+    font-size: 2.2em;
+    font-weight: 400;
+    /* margin: 20px; */
 }
 
 .app__list{
-    text-align: start;
-    margin: 40px;
-    font-size: 1.4em;
-}
-
-.app__delete {
-    margin-left: 500px;
+    font-size: 1.2em;
+    margin: 10px;
 }
 
 .app__delete {
@@ -96,11 +100,18 @@ body {
     cursor: pointer;
 }
 
+.app__add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
 .app__add input{
     border: 1px solid silver ;
     transition: color .3s ease;
     padding: 12px;
-    max-width: 280px;
+    /* max-width: 280px; */
     border-right: none;
     outline: none;
     font-size: 1.3em;
@@ -109,10 +120,9 @@ body {
     transition: border .3s ease;
 }
 
-.app__add input:hover,
-.app__add input:focus
+.app__add input:hover
 {
-    border: 1px solid var(--hover-color);
+    border:1px solid var(--hover-color);
 }
 
 .app__add button{
@@ -123,6 +133,7 @@ body {
     text-transform: capitalize;
     border: none;
     cursor: pointer;
+    /* outline: none; */
 }
 
 /* end main content */
